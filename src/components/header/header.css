@@ -1,0 +1,67 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    background-color: #0f0d0d;
+    padding: 16px 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    .title h1 {
+        color: #e74c3c;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .options {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        > div {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 12px;
+            background-color: rgba(231, 76, 60, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            position: relative;
+            */ &:hover {
+                background-color: rgba(231, 76, 60, 0.1);
+            }
+
+            .notification-dot {
+                position: absolute;
+                top: -6px;
+                right: -6px;
+                width: 15px;
+                height: 15px;
+                background-color: #e74c3c;
+                border-radius: 50%;
+                border: 2px solid #0f0d0d;
+            }
+        }
+
+        img {
+            width: 28px;
+            height: 28px;
+        }
+
+        span {
+            font-size: 16px;
+            color: #ecf0f1;
+        }
+
+        .account {
+            font-size: 28px;
+            color: #e74c3c;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
