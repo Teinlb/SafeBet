@@ -5,8 +5,8 @@
 }
 
 .rouletteTable {
-    height: 70vh;
-    width: 70vw;
+    height: 80vh;
+    width: 85vw;
     background: url(./assets/felt.png) repeat,
         radial-gradient(circle at 50% 40%, #438002, #152700);
     background-size: 120px 140px, auto;

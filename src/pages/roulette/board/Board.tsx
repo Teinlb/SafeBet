@@ -1,12 +1,16 @@
 import "./board.css";
+import Chips from "./chips/Chips";
 
 const Board = () => {
     return (
-        <img
-            src="src\pages\roulette\assets\Board.png"
-            alt=""
-            className="roulette-board"
-        />
+        <div className="roulette-board">
+            <img
+                src="src\pages\roulette\assets\Board.png"
+                alt=""
+                className="board-image"
+            />
+            <Chips />
+        </div>
     );
 };
 

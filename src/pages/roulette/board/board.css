@@ -1,4 +1,12 @@
 .roulette-board {
-    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: auto;
+    gap: 40px;
+}
+
+.board-image {
+    height: 260px;
 }

@@ -1,0 +1,10 @@
+.chips {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.chip {
+    height: 60px;
+}
