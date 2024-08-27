@@ -1,12 +1,14 @@
 .roulette-board {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: auto;
-    gap: 40px;
+    padding: 20px;
+    background-color: #006400;
 }
 
-.board-image {
-    height: 260px;
+.bet-options {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Pas aan op basis van het aantal inzetopties */
+    gap: 5px;
+    margin-top: 20px;
 }

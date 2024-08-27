@@ -32,11 +32,12 @@ const Wheel = () => {
             }
 
             const anglePerNumber = 360 / 37;
-            const numberAngle = relativePos * anglePerNumber;
 
+            const randomNumbers = Math.floor(Math.random() * 37);
             const randomRotations = Math.floor(Math.random() * 4) + 4;
-            const newWheelRotation = randomRotations * 360 - numberAngle;
-            const newBallRotation = -randomRotations * 360;
+
+            const newWheelRotation = randomRotations * 360 + anglePerNumber * (randomNumbers - relativePos);
+            const newBallRotation = -randomRotations * 360 + anglePerNumber * randomNumbers;
 
             setWheelRotation(prevRotation => prevRotation + newWheelRotation);
             setBallRotation(prevRotation => prevRotation + newBallRotation);            

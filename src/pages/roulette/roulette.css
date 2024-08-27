@@ -22,7 +22,7 @@
     background-clip: padding-box;
     border: 25px solid transparent;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
